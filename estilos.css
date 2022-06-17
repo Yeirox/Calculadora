@@ -1,0 +1,46 @@
+
+body{
+    padding: 0;
+    margin: 0;
+  background: linear-gradient(to right, green, black);
+
+}
+
+.calcula{
+    display:grid;
+    justify-content:center;
+   align-content: center;
+   min-height: 100vh;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+
+}
+.calcula > button {
+    font-size: 2rem;
+    border: 2px solid black;
+    outline:none;
+    background-color: rgb(33, 228, 235);
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: rgb(38, 61, 61);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output.display {
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+}
+.calcula > button:hover{
+    background-color: blue;
+
+
+}
